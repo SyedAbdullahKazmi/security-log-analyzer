@@ -1,0 +1,18 @@
+case_id,event_id,timestamp,computer,username,source_ip,event_type,status,logon_type,message,label,expected_rule,expected_result
+N01,4624,2026-11-18 09:00:00,LAB-PC,test_user,192.0.2.10,Logon,Success,2,Normal interactive login,Normal,None,No alert
+N02,4625,2026-11-18 09:05:00,LAB-PC,test_user,192.0.2.10,Logon,Failure,2,Single failed login,Normal,None,No alert
+S01,4625,2026-11-18 10:00:00,LAB-PC,test_user,198.51.100.20,Logon,Failure,3,Repeated failed login 1,Suspicious,R1,Alert expected
+S01,4625,2026-11-18 10:01:00,LAB-PC,test_user,198.51.100.20,Logon,Failure,3,Repeated failed login 2,Suspicious,R1,Alert expected
+S01,4625,2026-11-18 10:02:00,LAB-PC,test_user,198.51.100.20,Logon,Failure,3,Repeated failed login 3,Suspicious,R1,Alert expected
+S01,4625,2026-11-18 10:03:00,LAB-PC,test_user,198.51.100.20,Logon,Failure,3,Repeated failed login 4,Suspicious,R1,Alert expected
+S01,4625,2026-11-18 10:04:00,LAB-PC,test_user,198.51.100.20,Logon,Failure,3,Repeated failed login 5,Suspicious,R1,Alert expected
+S02,4625,2026-11-18 11:00:00,LAB-PC,test_user,203.0.113.5,Logon,Failure,3,Failed login before success,Suspicious,R2,Alert expected
+S02,4625,2026-11-18 11:01:00,LAB-PC,test_user,203.0.113.5,Logon,Failure,3,Second failed login before success,Suspicious,R2,Alert expected
+S02,4624,2026-11-18 11:02:00,LAB-PC,test_user,203.0.113.5,Logon,Success,3,Successful login after failures,Suspicious,R2,Alert expected
+S03,4732,2026-11-18 12:00:00,LAB-PC,demo_admin,LOCAL,AccountChange,Success,,Added test_user to local Administrators group,Suspicious,R3,Alert expected
+S04,4624,2026-11-18 13:00:00,LAB-PC,test_user,192.0.2.10,Logon,Success,2,High activity login 1,Suspicious,R4,Alert expected
+S04,4624,2026-11-18 13:00:10,LAB-PC,test_user,192.0.2.10,Logon,Success,2,High activity login 2,Suspicious,R4,Alert expected
+S04,4624,2026-11-18 13:00:20,LAB-PC,test_user,192.0.2.10,Logon,Success,2,High activity login 3,Suspicious,R4,Alert expected
+S04,4624,2026-11-18 13:00:30,LAB-PC,test_user,192.0.2.10,Logon,Success,2,High activity login 4,Suspicious,R4,Alert expected
+S04,4624,2026-11-18 13:00:40,LAB-PC,test_user,192.0.2.10,Logon,Success,2,High activity login 5,Suspicious,R4,Alert expected
+S04,4624,2026-11-18 13:00:50,LAB-PC,test_user,192.0.2.10,Logon,Success,2,High activity login 6,Suspicious,R4,Alert expected

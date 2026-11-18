@@ -65,7 +65,7 @@ The system will identify selected security events, apply detection rules, and ge
 4. Microsoft - Advanced Audit Policy Configuration
    https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/advanced-audit-policy-configuration
 
-5. CISA - Priority Logs for SIEM Ingestion
+5. Australian Signals Directorate (ASD) / Australian Cyber Security Centre (ACSC) - Priority Logs for SIEM Ingestion
    https://www.cyber.gov.au/publication/priority-logs-for-siem-ingestion-practitioner-guidance
 
 6. NIST - SP 800-92: Guide to Computer Security Log Management
