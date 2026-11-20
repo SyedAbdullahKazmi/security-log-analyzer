@@ -1,0 +1,6 @@
+[
+    {
+        "row": 2,
+        "reason": "Invalid isoformat string: 'NOT-A-VALID-DATE'"
+    }
+]
